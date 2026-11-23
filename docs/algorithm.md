@@ -109,7 +109,7 @@
 * *Виртуальные среды и пакеты*
 - [PyPI](https://pypi.org/)
 - [uv](https://github.com/astral-sh/uv)
-- [python3-venv или conda] - virtual environment
+- [python3-venv или conda]() - virtual environment
 ----------------------------------------------------
 - Package install: pip install requests
 - Package delete: pip uninstall <имя>
@@ -134,11 +134,11 @@
 - [Курсы программирования PurpleSchool](https://purpleschool.ru/)
 - [Тимофей Хирьянов](https://www.youtube.com/@tkhirianov) 
 - [Artsorax](https://www.youtube.com/@artsorax)
-- [Rebrain](www.youtube.com/@rebrainme)
+- [Rebrain](https://www.youtube.com/@rebrainme)
 - [Digitalize](https://youtube.com/@t0digital) 
 - [Alek OS](https://youtube.com/@AlekOS) 
-- [Bogdan Stashchuk](www.youtube.com/@Bogdan_Stashchuk)
-- [ADV-IT - for DevOps Engineers](www.youtube.com/@ADV-IT)
+- [Bogdan Stashchuk](https://www.youtube.com/@Bogdan_Stashchuk)
+- [ADV-IT - for DevOps Engineers](https://www.youtube.com/@ADV-IT)
 ----------------------------------------------------
 * **Python**
 - [Python documentation](https://docs.python.org/3/)
