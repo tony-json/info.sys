@@ -1,6 +1,7 @@
 [project]
 site_url = "https://tony-json.github.io/info.sys/"
 site_name = "Awesome Information Systems"
+generator = false
 # site_description = "Your project description"
 # site_author = "tony-json"
 
