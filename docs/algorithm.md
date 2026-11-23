@@ -139,6 +139,11 @@
 - [Alek OS](https://youtube.com/@AlekOS) 
 - [Bogdan Stashchuk](https://www.youtube.com/@Bogdan_Stashchuk)
 - [ADV-IT - for DevOps Engineers](https://www.youtube.com/@ADV-IT)
+- Google and Firefox Developer Tools
+----------------------------------------------------
+- [Developer products](https://developers.google.com/products)
+- [Android OS Documentation](https://source.android.com/docs)
+- [Android Developer centers](https://developer.android.com/)
 ----------------------------------------------------
 * **Python**
 - [Python documentation](https://docs.python.org/3/)
@@ -179,7 +184,6 @@
 - [envato - themeforest](https://themeforest.net/)
 - [htmlrev](https://htmlrev.com/)
 - [themewagon](https://themewagon.com/)
-
 
 
 

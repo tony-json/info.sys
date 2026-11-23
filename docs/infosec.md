@@ -174,73 +174,13 @@ C2-сервер — управляющий центр вредоносной с�
 
 
 
-## Тестирование безопасности мобильных приложений
-
-- *OWASP Mobile Application Security Testing Guide (MASTG)*
-- MITRE ATT&CK
-- AArch64, as ARM64, is a 64-bit version of the ARM architecture family
-- APK and other executing files
-- Executable and Linkable Format (ELF)
-- Android and Java virtual machine (JVM)
-- Java Development Kit (JDK), javac
-- Toybox and Android Debug Bridge (adb)
-- [termux, PRoot Distro](https://github.com/termux/proot-distro)
-* *Эмуляторы Android*
-- Android Studio (AVD)
-- Genymotion
-- Wayland
-- Waydroid 
-* *Build tools*	
-- Gradle, Maven, TeamCity
-----------------------------------------------------
-* [kali tools](https://www.kali.org/tools/all-tools/)
-- OWASP Project, Burp Suite, MobSF (Mobile Security Framework)
-- Frida & Objection
-- Magisk, KernelSU - Rooting device, Xposed Framework
-- Google for Developers - Developer products
-----------------------------------------------------
-- Exploitation: The Metasploit Project, Burp Suite, sqlmap, Veil Frameworks, SEToolkit
-- Post-Exploitation: C2 frameworks - Cobalt Strike, Sliver, Havoc, Mythic, Empire, Armitage
-----------------------------------------------------
-
-
-
-## Тестирование веб-безопасности
-
-- *OWASP Web Security Testing Guide*
-- MITRE ATT&CK
-
-
 
 ## infosec resource
 
-- [The OWASP Foundation](https://github.com/OWASP)
-- [The OWASP attacks](https://owasp.org/www-community/attacks/)
-- [MITRE ATT&CK](https://attack.mitre.org/)
-----------------------------------------------------
 - Google and Firefox Developer Tools
 ----------------------------------------------------
-- [Developer products](https://developers.google.com/products)
-- [Android OS Documentation](https://source.android.com/docs)
-- [Android Developer centers](https://developer.android.com/)
-----------------------------------------------------
-- [OffSec: Infosec & Cybersecurity Training](https://www.offsec.com/)
-- [OffSec VulnHub](https://www.vulnhub.com/resources/)
-- [Rapid7](https://www.rapid7.com/)
-- [The Metasploit](https://www.metasploit.com/)
 - [Kaspersky Blog](https://www.kaspersky.com/blog/)
 - [Kaspersky Resource Center](https://www.kaspersky.ru/resource-center)
-----------------------------------------------------
-- [Malware-Bible](https://github.com/Perkins-Fund/Malware-Bible)
-- [Kuba Gretzky](https://github.com/kgretzky) - reverse engineering and C/C++ dev.
-- [breakdev of Kuba](https://breakdev.org/) - offensive security tools & research
-* [Hacking Articles by Raj Chandel’s Blog](https://hackingarticles.in)
-* [AppSec сообщество - ORDA](https://cyberorda.com/#)
-- [4PDA:](https://4pda.to/)
-* *Practice Labs & CTFs*
-- Хакинг. Искусство эксплойта, автор Джон Эриксон
-- [exploit-db](https://www.exploit-db.com/)
-- TryHackMe, Hack The Box, Metasploitable, Root-Me (root-me.org)
 
 
 
