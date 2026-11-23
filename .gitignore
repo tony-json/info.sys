@@ -1,0 +1,18 @@
+# Python virtual environments
+.venv/
+.venv.old/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Zensical cache and generated site
+.cache/
+site/
+
+# Editor settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db

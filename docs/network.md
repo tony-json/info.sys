@@ -1,0 +1,173 @@
+# Awesome Computer Networking
+
+## Содержание
+
+- Как компьютер передает информацию
+    - Сетевой пакет (Network Packet)
+	- Сегмент (Segment)
+	- Датаграмма (Datagram)
+	- Кадр (Frame)
+- Локальная сеть (Local Area Network - LAN)
+- Глобальная сеть (Wide Area Network - WAN)
+- Клиент и сервер (Client / Server)
+- Сетевой протокол (Network Protocol)
+- Сетевая модель OSI, модель TCP/IP
+- Инкапсуляция / ДеИнкапсуляция
+- Маршрутизация и Коммутация (Routing and Switching)
+- Network address translation (NAT)
+- Топология сетей (Network Topology)
+----------------------------------------------------
+* *Сетевая адресация*
+- IP-адрес (IP Address), Маска подсети (Subnet Mask), Шлюз (Gateway)
+- MAC-адрес
+- ARP-таблица
+----------------------------------------------------
+- Файрвол (межсетевой экран или брандмауэр)
+- Virtual private network (VPN), OpenVPN, WireGuard
+- Port forwarding - iptables, ufw (Uncomplicated Firewall), ngrok
+* *Транспорт и соединения*
+- Порт (Port)
+- Сокет (Socket)
+* *Активное сетевое оборудование*
+* *Пассивное сетевое оборудование*
+
+
+
+## Model OSI and Model TCP/IP
+
+1. Application layer: HTTPS, FTP, DNS, DHCP, Telnet, SSH, Secure Shell, SMTP, SMB
+2. Presentation layer: SSL, TLS, MIME, JPEG, GIF
+3. Session layer: Sockets, PPTP, L2TP, NetBIOS, RPC
+4. Transport layer: TCP and UDP
+5. Network layer (Router): IP (IPv4, IPv6), ICMP, IPsec
+6. Data link layer (Switch): ARP, MAC, Ethernet
+7. Physical layer (Hubs/0011001): Twisted pair, Optical fiber, Bluetooth, Wi-Fi, 
+
+
+
+## Активное сетевое оборудование
+
+* Сетевой контроллер (Net Controller / NIC)
+* Маршрутизатор (Router) 
+* Коммутатор (Switch) и Хаб (Hub)
+  * CLI, SNMP agent and web interface
+* Беспроводная точка доступа (Wireless Access Point — AP)
+* Повторитель (Repeater)
+* Оптический медиаконвертер (Fiber Media-Converter)
+* Brand network hardware: TP-Link, D-Link, hikvision, HUAWEI
+
+
+## Пассивное сетевое оборудование
+
+* Кабели связи (Витая пара), Cable UTP, FTP Сat5e
+* Модульный разъем (Modular Connector)
+* Оптическое волокно и SFP-модули (Optical fiber & SFP)
+* IP-телефония (VoIP)
+* Мобильные сети (Mobile Networking) GSM, UMTS, LTE
+
+
+### Network Address Translation (NAT)
+
+Network address translation (NAT) - Transformation 
+Local area network (LAN) => в Wide area network (WAN).
+Router (NAT): 192.168.0.2:5432(LAN) → 93.184.216.34:6001(WAN)
+
+
+### Local Private addresses
+
+1. Class A: 10.0.0.0 – 10.255.255.255
+2. Class B: 172.16.0.0 – 172.31.255.255
+3. Class C: 192.168.0.0 – 192.168.255.255
+- 192.168.0.0/24 or 192.168.0.0/16
+
+
+
+
+## Передача информации
+
+- Внутри компьютера данные передаются в виде электрических или оптических импульсов по проводникам на материнской плате (шинам).
+- Между компьютерами информация передается через сети (Wi-Fi, оптоволокно, кабели), где двоичный код преобразуется в радиоволны, световые вспышки или электрические сигналы.
+
+
+## Маршрутизация и коммутация
+
+Маршрутизация и коммутация — это два основных процесса для передачи данных в компьютерных сетях, 
+которые работают на разных уровнях модели OSI.
+Главные различия
+
+* **Коммутация (создание связи внутри сети)**
+	- Уровень OSI: Канальный (L2)
+	- Адресация: Использует MAC-адреса (физические адреса устройств)
+	- Задача: Соединяет устройства (компьютеры, принтеры) в пределах одной локальной сети (LAN)
+	- Оборудование: Коммутатор (свитч) пересылает кадры данных только на тот порт, к которому подключен нужный адресат
+
+* **Маршрутизация (связь между сетями)**
+	- Уровень OSI: Сетевой (L3) и выше.
+	- Адресация: Использует IP-адреса (логические адреса узлов).
+	- Задача: Находит оптимальный путь и передает пакеты между разными сетями (например, из локальной сети в интернет или между офисами)
+	- Оборудование: Маршрутизатор (роутер) соединяет разные сети, выполняет трансляцию адресов (NAT) и фильтрует трафик через брандмауэр
+
+* **Как они работают вместе**
+В реальных сетях коммутаторы объединяют компьютеры внутри кабинетов и этажей, а маршрутизатор служит главным шлюзом, 
+выпускающим этот локальный трафик во внешнюю глобальную сеть.
+
+
+
+
+## Network CLI Tools
+
+* *Network Diagnostics & Routing*
+- ping, pathping, hping3, traceroute, tracepath, TRACERT, mtr
+- DNS Tools: dig, nslookup 
+- *Network Configuration & Interfaces*
+- ip, ifconfig, netstat, route, nmcli
+- IpScanner for Windows
+- *Ethernet & Low-Level Networking*
+- inetutils, ethtool, ip link, bridge
+- *Wireless / Wi-Fi Tools*
+- iw, iwconfig, iwlist, iwspy
+- *Port Scanners:* nmap, masscan
+- *LAN Discovery & ARP Tools*
+- arp, arp-scan, Netdiscover
+- *File Transfer:* rsync, scp, sftp
+- *HTTP/FTP Download Tools*
+- curl, wget, FileZilla
+- *TCP/UDP connections and debugging*
+- ss, netcat (nc)
+- *Firewall & Packet Filtering*
+- ufw, iptables, nftables
+- *Traffic Monitoring*
+- Wireshark, tcpdump, tshark
+- *Network Performance:* iperf, iperf3, speedtest-cli
+
+
+
+**Электронная почта (e-mail)**
+- Mozilla Thunderbird, MS Outlook, MS Exchange Server
+----------------------------------------------------
+**Облачное хранилище**
+- Google Drive, Dropbox, Yandex Disk
+- cloud.google.com - Cloud Computing Services
+----------------------------------------------------
+* **Remote administration software**
+- [Remote administration software](https://en.wikipedia.org/wiki/Remote_administration)
+- The Secure Shell Protocol (SSH Protocol) 
+- OpenSSH, PuTTY, Termius, MobaXterm, rsync
+- RustDesk, AnyDesk, TeamViewer, Remmina, Chrome Remote Desktop
+----------------------------------------------------
+* **Virtual private network (VPN)**
+- Tailscale, OpenVPN, WireGuard
+
+- Топология сетей (Network Topology) - Шина, Звезда, Кольцо
+
+## Ресурсы
+
+- [Linux Network Administrators Guide](https://tldp.org/LDP/nag2/index.html) - 
+- [Introduction to TCP/IP Networks](https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/book/)
+- [The Apache HTTP Server](https://httpd.apache.org/docs-project/) 
+----------------------------------------------------
+- Компьютерные сети. Нисходящий подход. Джеймс Куроуз
+- Компьютерные сети. Принципы, технологии, протоколы. Виктор Олифер, Наталья Олифер
+- [Компьютерные сети - Учебные курсы Андрей Созыкин](https://asozykin.ru/)
+
+
