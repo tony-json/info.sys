@@ -1,12 +1,12 @@
 [project]
-site_url = "https://www.example.com/"
+site_url = "https://tony-json.github.io/info.sys/"
 site_name = "Awesome Information Systems"
 # site_description = "Your project description"
 # site_author = "tony-json"
 
 # copyright = "Copyright &copy; 2026 Unix Digital Agency"
 
-# repo_url = "https://github.com/user/repo"
+# repo_url = "https://github.com/tony-json/info.sys"
 # repo_name = "user/repo"
 # edit_uri = "edit/main/docs/"
 
@@ -31,7 +31,7 @@ nav = [
 # variant = "classic"
 # custom_dir = "overrides"
 # favicon = "images/favicon.png"
-language = "en"
+language = "ru"
 features = [
   "announce.dismiss",
   # "content.action.edit",
