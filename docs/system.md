@@ -21,7 +21,7 @@
 Операционная система (ОС) - это системное программное обеспечение, которое управляет 
 аппаратными и программными ресурсами компьютера и предоставляет общие услуги для компьютерных программ. 
 
-#### Основные функции ОС
+**Основные функции ОС**
 
 - Управление ресурсами: выделение оперативной памяти, распределение процессорного времени между задачами и управление накопителями.
 - Взаимодействие с оборудованием: драйверы связывают ОС с комплектующими (видеокартами, принтерами, клавиатурами).
@@ -29,11 +29,12 @@
 - Файловая система: организация хранения, удаления и быстрого доступа к данным на дисках (например, через NTFS или EXT4).
 - Запуск программ: создание изолированной среды для выполнения прикладного софта.
 
-#### Kernel Space (Пространство ядра)
+
+**Kernel Space (Пространство ядра)**
 
 - Драйверы устройств, firmware
 - Системные вызовы (System Calls)
-- Системные библиотеки
+
 - Компиляторы и интерпретаторы
 - Файлы и файловые системы
 - Управление процессами и потоками
@@ -48,10 +49,11 @@
     - Права доступа к файлам (File Permissions)
 
 
-#### User Space (Пространство пользователя)
+**User Space (Пространство пользователя)**
 
 - Initialization Daemon (init, systemd) 
 - System Daemons (sshd, udevd)
+- Системные библиотеки
 - Оконные менеджеры и интерфейсы
 - Standard C Library (up to 2000 subroutines)
 - GNU Compiler Collection (GCC) 
@@ -68,7 +70,7 @@ Unified Extensible Firmware Interface или UEFI  — это встроенно
 Он пришел на смену устаревшему классическому BIOS.
 
 
-#### Процесс загрузки Linux
+### Процесс загрузки Linux
 
 1. Инициализация оборудования (BIOS / UEFI)
 	- BIOS: Выполняет самотестирование при включении (POST), ищет загрузочный сектор (MBR) на физическом носителе и передает управление первичному загрузчику.
@@ -90,26 +92,41 @@ Unified Extensible Firmware Interface или UEFI  — это встроенно
 
 ## Инструментальное программное обеспечение
 
-* **Редактор исходного кода**
+**Редактор исходного кода**
+
 - Neovim, Nano, Sublime Text, Notepad++
-* **Интегрированные среды разработки (IDE)**
+
+**Интегрированные среды разработки (IDE)**
+
 - Visual Studio Code, Eclipse, NetBeans
 - IntelliJ IDEA (Java/Kotlin), PyCharm (Python), CLion (C/C++)
 - Android Studio (Android), Xcode (iOS/macOS), Visual Studio (C#/.NET)
 - Java Development Kit (JDK / Javac), Android SDK
-* **Компиляторы и Интерпретаторы**
+
+**Компиляторы и Интерпретаторы**
+
 - GNU Compiler Collection (GCC), Clang, Python Interpreter (CPython)
-* **Отладчики (debuggers)**
+
+**Отладчики (debuggers)**
+
 - GNU Debugger, LLDB, Chrome DevTools, Firefox Developer Tools
-* **Системы контроля версий**
+
+**Системы контроля версий**
+
 - Git, Github, GitLab
-* **Компоновщик**
+
+**Компоновщик**
+
 - GNU Binutils, LLD, gold, link.exe
-* **Ассемблер, Дизассемблер, Декомпилятор**
+
+**Ассемблер, Дизассемблер, Декомпилятор**
+
 - Ассемблеры: NASM (Netwide Assembler), MASM (Microsoft Macro Assembler), GAS (GNU Assembler)
 - Дизассемблеры: IDA Pro, Ghidra, OllyDbg, x64dbg, Radare2
 - Декомпиляторы: Ghidra, IDA Pro Compiler, JD-GUI (для Java)
-- **GNU toolchain**
+
+**GNU toolchain**
+
 - GNU Autotools (build system)
 - GNU Binutils
 - GNU C Library

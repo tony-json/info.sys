@@ -41,12 +41,12 @@
 
 ## Большая языковая модель (LLM)
 
-- Large language model (LLM) - A super text autocomplete system
+Большая языковая модель (LLM) — суперсистема автозаполнения текста.
 
 Большая языковая модель (LLM от англ. Large Language Model) - это тип систем искусственного интеллекта на базе глубокого обучения, 
 который обучен на колоссальных объемах текста для понимания, перевода, анализа и генерации человеческой речи. 
 
-Как это устроено простыми словами
+**Как это устроено простыми словами**
 
 1. Архитектура «Трансформер»: В основе большинства современных LLM лежит нейросетевая архитектура Transformer (появилась в 2017 году), 
 которая умеет анализировать весь текст сразу и понимать связи между словами на большом расстоянии. 
@@ -56,32 +56,22 @@
 какое слово или токен должно идти дальше.
 4. Тонкая настройка (Fine-Tuning и RLHF): Чтобы модель отвечала вежливо, безопасно и по существу, её дополнительно обучают на специальных примерах 
 и с помощью обратной связи от людей (Reinforcement Learning from Human Feedback). 
-----------------------------------------------------
-* *Что умеют делать LLM*
+
+**Что умеют делать LLM**
+
 - Генерировать контент: писать статьи, посты, стихи, электронные письма и сценарии.
 - Работать с кодом: писать программы на разных языках, искать ошибки (дебажить) и помогать в разработке.
 - Анализировать и сокращать: делать краткую выжимку (суммаризацию) длинных документов, отчетов или книг.
 - Переводить: качественно переводить текст с учетом контекста и сленга.
 - Вести диалог: отвечать на вопросы в роли консультантов, репетиторов или помощников (например, ChatGPT, YandexGPT, GigaChat). 
 
-----------------------------------------------------
+**LLM Hub**
 
-- [GitHub Copilot](https://github.com/) 
-- [Anthropic](https://www.anthropic.com/)
-- [Google AI for Developers](https://ai.google.dev/) 
-- [OpenAI for developers](https://developers.openai.com/)
-- [x.ai](https://x.ai/)
-- [OpenRouter](https://openrouter.ai/)
-- [Huggingface](https://huggingface.co/)
-----------------------------------------------------
-* *LLM Hub*
 - [CursorAI]()
 - [OpenRouter, Opencode.ai, Continue.dev]()
 - [Hugging Face](https://github.com/huggingface)
 - [Ollama](https://github.com/ollama)
 - [PerplexityAI](https://github.com/perplexityai)
-
-
 
 
 
@@ -102,60 +92,41 @@
 Transformer = система, которая автоматически находит “что важно” в данных
 
 
-
 ## AI agents
 
 Автономные системы на базе LLM, которые могут самостоятельно планировать шаги, использовать внешние инструменты 
 (API, браузер, терминал) и выполнять сложные задачи без постоянного контроля человека.
 
-- [AI Агент с НУЛЯ - ADV-IT](https://youtu.be/yQwtdUtaBQw?si=-wOeJEvkRJYC2_3S)
-- [The 2026 Guide to AI Agents](https://www.ibm.com/think/ai-agents)
-- [What are AI agents?](https://github.com/resources/articles/what-are-ai-agents)
+## AI Coding Agents
 
+- [GitHub Copilot](https://github.com/) 
+- [Anthropic](https://www.anthropic.com/)
+- [Google AI for Developers](https://ai.google.dev/) 
+- [OpenAI for developers](https://developers.openai.com/)
+- [x.ai](https://x.ai/)
+- [OpenRouter](https://openrouter.ai/)
+- [Huggingface](https://huggingface.co/)
+- [JetBrains Junie]()
+- [Cline]()
+- [Devin Desktop]()
+----------------------------------------------------
 * *AI Agents*
 - [OpenClaw](https://github.com/openclaw)
 - [clawhub](https://clawhub.ai/)
 - [hermes-agent](https://github.com/NousResearch/hermes-agent)
+----------------------------------------------------
 * *Frameworks*
 - [LangChain, LangGraph](https://github.com/langchain-ai)
 - [LlamaIndex](https://github.com/run-llama/)
 ----------------------------------------------------
-* **Цикл работы AI агентов (Must-Have)**
-1. User Input - System and User Prompts > 
-- Получает задачу (цель) от пользователя
-2. Context Builder > Подгружается:
-- краткосрочная память (short-term)
-- долгосрочная память (long-term)
-3. LLM (Reasoning / Planning) 
-- Анализирует, Декомпозирует цель
-4. Action Selector
-- вызвать tool или дать финальный ответ
-5. Executor (Tool/Function Calling Layer)
-- File System / Shell / API / Web
-6. State Manager
-- Обновляет текущее состояние:
-- Memory: Short and Long Term, Logger (FS / JSON / DB)
-
-
-
-## AI Coding Agents
-
 - [Best AI Coding Agents for Developers (2026)](https://junie.jetbrains.com/blog/best-ai-coding-agents/)
 - [ИИ-инструменты для разработки](https://youtube.com/playlist?list=PLhZj4EWV4TniIoUTgFzDMQBeBIwwd13_U&si=A53ZKKPIRq0ZA8TM)
-
-- Claude Code
-- GitHub Copilot
-- Google Antigravity
-- OpenAI Codex
-- JetBrains Junie
-- Cursor
-- Cline
-- Devin Desktop 
+- [AI Агент с НУЛЯ - ADV-IT](https://youtu.be/yQwtdUtaBQw?si=-wOeJEvkRJYC2_3S)
+- [The 2026 Guide to AI Agents](https://www.ibm.com/think/ai-agents)
+- [What are AI agents?](https://github.com/resources/articles/what-are-ai-agents)
 
 
-
-
-## Навыки (Skills.md) агентов
+## Навыки агентов (Skills.md) 
 
 Навыки Агентов - Стандартизированные текстовые инструкции и описания инструментов (часто в формате Markdown), 
 которые определяют правила поведения агента, доступные ему функции и алгоритмы решения конкретных задач.
@@ -169,18 +140,19 @@ name: my-skill-name
 description: A clear description of what this skill does and when to use it
 ---
 
-## My Skill Name
+**My Skill Name**
 
 Add your instructions here that Claude will follow when this skill is active
 
-## Examples
+**Examples**
+
 - Example usage 1
 - Example usage 2
 
-## Guidelines
+**Guidelines**
+
 - Guideline 1
 - Guideline 2
-
 
 
 
@@ -192,9 +164,7 @@ Add your instructions here that Claude will follow when this skill is active
 предложи архитектуру, создай план реализации, затем последовательно реализуй компоненты, 
 тестируй каждый этап и исправляй ошибки.
 
-
-
-## The must-have markdown files for AI
+**The must-have markdown files for AI**
 
 * project/
 - **README.md** — Как запустить и использовать проект?
@@ -212,20 +182,20 @@ Add your instructions here that Claude will follow when this skill is active
 
 * *(Роль / персона) + (Контекст / ситуация) + (Задача) + (Формат / стиль) + (Цель / ограничение)*
 
-----------------------------------------------------
-1. (Роль / персона) - Задай, *кем* является ИИ (уровень, опыт, специализация, стиль мышления).
-2. (Контекст / ситуация) - Опиши исходные данные, фон или окружение задачи.
-3. (Задача) - Что конкретно нужно сделать?
-4. (Формат / стиль ответа) - Как подать результат — в каком виде, тоне, или структуре?
-5. (Цель / ограничение) - Для чего это, какие рамки или требования?
-----------------------------------------------------
-* **Пример полного Role Prompt**
+- (Роль / персона) - Задай, *кем* является ИИ (уровень, опыт, специализация, стиль мышления).
+- (Контекст / ситуация) - Опиши исходные данные, фон или окружение задачи.
+- (Задача) - Что конкретно нужно сделать?
+- (Формат / стиль ответа) - Как подать результат — в каком виде, тоне, или структуре?
+- (Цель / ограничение) - Для чего это, какие рамки или требования?
+
+**Пример полного Role Prompt**
+
 - Ты опытный инженер по данным с 10-летним опытом в PostgreSQL и Python.
 - У меня есть таблица на 10 млн строк с полями `user_id`, `timestamp`, `event_type`.
 - Задача: оптимизировать запросы для аналитики активности пользователей.
 - Представь решение в виде краткой инструкции и примера кода.
 - Цель: минимизировать время выполнения без изменения структуры таблиц.
-----------------------------------------------------
+
 
 
 
@@ -246,8 +216,6 @@ RAG (Retrieval-Augmented Generation) — это подход в искусств
 
 
 
-
-
 ## Нейронная сеть (Neural network)
 
 Нейронная сеть (Neural network) - Математическая модель, построенная по принципу организации биологических нейронных сетей мозга. 
@@ -255,17 +223,8 @@ RAG (Retrieval-Augmented Generation) — это подход в искусств
 
 
 
-
 ## Ресурсы
 
 - [List of AI-assisted software development tools](https://en.wikipedia.org/wiki/List_of_AI-assisted_software_development_tools)
-
-
-
-
-
-
-
-
 
 

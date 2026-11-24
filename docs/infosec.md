@@ -94,25 +94,10 @@
 - Подслушивание, перехват коммуникаций (Eavesdropping, Listening)
 - Фишинг (Phishing), голосовой фишинг (Vishing)
 - Атака человек посередине (MITM, Man-in-the-Middle)
-- Архитектура C2 (Command & Control) 
 - Обход EDR/AV (EDR/AV Bypasses) — C, ASM, обфускация, шифрование
 - Выполнение программ (Program Execution), исполняемый файл (Executable File)
 - Статический / динамический анализ (Static / Dynamic Analysis)
-
-* *C2-Инфраструктура (Command and Control)*
-C2-сервер — управляющий центр вредоносной сети. Через такой сервер хакер 
-отправляет команды заражённым устройствам и получает данные с них.
-После заражения устройство подключается к серверу управления, получает инструкции 
-и выполняет задачи: сбор данных, распространение вредоносного ПО или участие в атаках.
-Атакующие маскируют трафик под обычные веб-запросы, применяют HTTPS, шифрование, 
-генерацию доменов и прокси-серверы.
-Основные компоненты
-- C2 Server / Team Server
-- C2 Client / Operator Console
-- Agent / Beacon / Implant
-- [awesome-command-control](https://github.com/tcostam/awesome-command-control)
-----------------------------------------------------
-- декомпиляция, внедрение кода и обратная сборка apk файлов
+* C2-Инфраструктура (Command and Control)
 
 
 
@@ -154,6 +139,7 @@ C2-сервер — управляющий центр вредоносной с�
 
 Большинство обнаруженных уязвимостей задокументированы в базе данных Common Vulnerabilities and Exposures (CVE). 
 
+
 ## Программная ошибка - Error
 
 Программная ошибка — это дефект (баг) в компьютерной программе. 
@@ -166,13 +152,16 @@ C2-сервер — управляющий центр вредоносной с�
 - Динамический анализ (Dynamic Analysis) — анализ программы во время её выполнения
 - Декомпилятор (Decompiler) — преобразует исполняемый код в код, близкий к исходному
 - Дизассемблер (Disassembler) — преобразует машинный код в инструкции языка ассемблера
+
+
+**Основные компоненты**
+
+- C2 Server / Team Server
+- C2 Client / Operator Console
+- Agent / Beacon / Implant
+- [awesome-command-control](https://github.com/tcostam/awesome-command-control)
 ----------------------------------------------------
-- Ghidra, x64dbg and Interactive Disassembler (IDA Free) 
-- Bytecode Viewer, Smali/Baksmali - analyze dalvik-byte code
-- Radare2, GDB, QEMU, Strace, Ltrace, objdump, readelf
-- JADX, Apktool - decompile Java code
-
-
+- декомпиляция, внедрение кода и обратная сборка apk файлов
 
 
 ## infosec resource
